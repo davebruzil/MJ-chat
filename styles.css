@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: rgb(243, 232, 232);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.image-container img {
+    width: 200px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent overlapping */
+    margin: 10px auto; /* Center the image */
+    border-radius: 100px;
+}
+
+.input-container input {
+
+}
+
+
+/* Input field styling */
+input[type="text"] {
+    width: 50%;
+    padding: 35px;
+    border-radius: 13px;
+    margin-top: 200px;
+    margin-left: 336px;
+    border: 1px solid #ccc; /* Add a subtle border */
+    outline: none; /* Remove the outline */
+    background-color: #f9f9f9; /* Light background color for the input */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    text-align: left; /* Aligns the text and cursor to the right */
+    direction: rtl;    
+    
+}
+input[type="text"]::placeholder {
+    position: relative;
+    top: 1px; /* Move it down a bit from the top *
+    left: 15px; /* Move it towards the left */
+    font-size: 16px; /* Optional: Adjust placeholder text size */
+    color: #888; /* Optional: Set placeholder color */
+}
+
+
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.img-mj{
+    width: 15px;
+
+}
+

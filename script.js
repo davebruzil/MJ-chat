@@ -1,0 +1,1 @@
+console.log("Michael Jackson Chat Website Loaded");
