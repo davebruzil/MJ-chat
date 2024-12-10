@@ -14,26 +14,49 @@ header {
 }
 
 
-.image-container img {
-    width: 200px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Prevent overlapping */
-    margin: 10px auto; /* Center the image */
-    border-radius: 100px;
-}
 
-.input-container input {
-
-}
+#chat-window {
+    position: relative;
+    width: 40%;
+    height: 300px; /* Set the height for the chat window */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Center it horizontally */
+    background-color: #fff; /* Background color for the chat window */
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    overflow: hidden; /* Prevent overflow outside the container */
+  }
+  
+  #messages-container {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 10px; /* Add some spacing inside the container */
+  }
+  
+  .message {
+    margin-bottom: 10px; /* Space between messages */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1; /* Light background for messages */
+    max-width: 90%; /* Prevent messages from stretching too wide */
+    word-wrap: break-word; /* Wrap long words to avoid overflow */
+  }
+  
+  .message.user {
+    align-self: flex-end; /* Align user messages to the right */
+    background-color: #d1e7dd; /* Different color for user messages */
+  }
 
 
 /* Input field styling */
 input[type="text"] {
-    width: 50%;
+    width: 30%;
     padding: 35px;
     border-radius: 13px;
-    margin-top: 200px;
-    margin-left: 336px;
+    margin-top: 10px;
+    margin-left: 497px;
+    
     border: 1px solid #ccc; /* Add a subtle border */
     outline: none; /* Remove the outline */
     background-color: #f9f9f9; /* Light background color for the input */
@@ -43,14 +66,52 @@ input[type="text"] {
     direction: rtl;    
     
 }
-input[type="text"]::placeholder {
-    position: relative;
-    top: 1px; /* Move it down a bit from the top *
-    left: 15px; /* Move it towards the left */
-    font-size: 16px; /* Optional: Adjust placeholder text size */
-    color: #888; /* Optional: Set placeholder color */
+
+
+.photo-container {
+    display: flex; /* Aligns items horizontally */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    justify-content: center; /* Centers the whole container horizontally */
+    gap: 800px; /* Space between items */
+    margin: 20px; /* Adjust margin for positioning */
+    height: 100px;
+    margin-top: -400px; /* Optional: Set a specific height for the container */
 }
 
+
+/* Photo styling */
+.photo-container img {
+    width: 370px; /* Adjust width */
+    height: 370px; /* Adjust height */
+    border-radius: 50%; /* Makes the photos round */
+    object-fit: cover; /* Ensures the image fits well */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for effect */
+}
+
+#arrow-up-btn {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 20px;    /* 20px from the bottom of the screen */
+    right: 20px;     /* 20px from the right side of the screen */
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;  /* Ensures it's visible by default */
+    z-index: 100; 
+    left:480px; 
+    bottom:167px; 
+    display:none; /* Ensure the button is on top of other elements */
+}
+
+#arrow-up-btn img {
+    width: 40px;  /* Adjust the image size as needed */
+    height: 40px;
+    border-radius: 15px;
+}
+
+#arrow-up-btn:hover img {
+    opacity: 0.3; /* Add hover effect to image */
+}
 
 
 
